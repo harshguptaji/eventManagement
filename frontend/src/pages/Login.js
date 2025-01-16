@@ -31,7 +31,7 @@ const Login = () => {
         <form onSubmit={handleSubmit} className='form-container'>
           <div className='div-center'>
             <label htmlFor="number" className='login-number'>Number </label><br/>
-            <input className='input-number'
+            <input className='input-number00'
               type="number"
               id="number"
               value={number}
@@ -43,7 +43,7 @@ const Login = () => {
           <div>
             <label htmlFor="password" className='login-password '>Password</label><br/>
             <input
-            className='input-password'
+            className='input-password00'
               type="password"
               id="password"
               value={password}
@@ -53,8 +53,8 @@ const Login = () => {
             />
           </div>
           {error && <p className="error">{error}</p>}
-          <div className='div-btn'>
-            <button type="submit" className='button-17' disabled={loading}>
+          <div className='div-btn-login'>
+            <button type="submit" className='login-event-btn11' disabled={loading}>
               {loading ? 'Logging in...' : 'Login'}
             </button>
           </div>
