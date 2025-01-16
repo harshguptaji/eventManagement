@@ -10,7 +10,7 @@ export const importingUploadCSV = createAsyncThunk(
             formData.append('file', file);
             
             // Assuming the endpoint for file upload is '/api/uploadUser'
-            const response = await axios.post('http://localhost:5000/api/v1/upload/importuser', formData, {
+            const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/upload/importuser', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

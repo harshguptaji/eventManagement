@@ -7,7 +7,7 @@ export const searchUserInEvents = createAsyncThunk(
     'search/searchUserInEvents',
     async (registrationId, { rejectWithValue }) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/event/searching', { registrationId });
+            const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/event/searching', { registrationId });
             return response.data; // Success response
         } catch (error) {
             return rejectWithValue(error.response.data); // Error response

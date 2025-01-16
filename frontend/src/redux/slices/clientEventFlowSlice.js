@@ -7,7 +7,7 @@ export const fetchClientEventInfo = createAsyncThunk(
     'clientEventFlow/fetchClientEventInfo',
     async ({ registrationId, eventName }, { rejectWithValue }) => {
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/client/information', { registrationId, eventName });
+            const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/client/information', { registrationId, eventName });
             return response.data.eventInfo.flowSteps;
         } catch (error) {
             return rejectWithValue(error.response?.data?.message || "Failed to fetch event info");

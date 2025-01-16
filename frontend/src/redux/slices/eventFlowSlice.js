@@ -6,7 +6,7 @@ export const fetchAllEventFlows = createAsyncThunk(
   'eventFlows/fetchAllEventFlows',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://localhost:5000/api/v1/eventflow/all'); // Your backend endpoint
+      const response = await axios.get('https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/all'); // Your backend endpoint
       return response.data.eventFlows;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || 'An error occurred');
@@ -20,7 +20,7 @@ export const addNewEventFlow = createAsyncThunk(
     async({registrationId, adminName}, {rejectWithValue}) => {
         try {
             const response = await axios.post(
-                'http://localhost:5000/api/v1/eventflow/register',
+                'https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/register',
                 {registrationId, adminName}
             );
             return {eventFlow: response.data.eventFlow, message: response.data.message};
@@ -33,7 +33,7 @@ export const addNewEventFlow = createAsyncThunk(
 // Delete EventFlow By Id
 export const deleteEventFlowById = createAsyncThunk('eventFlows/deleteEventFlowById', async (eventFlowId, {rejectWithValue}) => {
     try {
-        const response = axios.delete(`http://localhost:5000/api/v1/eventflow/${eventFlowId}/delete`);
+        const response = axios.delete(`https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${eventFlowId}/delete`);
         return {eventFlowId, message: (await response).data.message};
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Error deleting Event Flow');
@@ -45,7 +45,7 @@ export const eventFlowInfoById = createAsyncThunk(
   'eventFlows/eventfloeInfoById',
   async({id},{rejectWithValue}) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/v1/eventflow/${id}`);
+      const response = await axios.get(`https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${id}`);
       return {message: response.data.message, eventFlow: response.data.eventFlow};
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || 'Error Fething Event Flow');
@@ -58,7 +58,7 @@ export const addStepFlow = createAsyncThunk(
   'eventFlows/addStepFlow',
   async ({ eventId, flowName, flowOrder, flowDescription, flowTag, adminName  }, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`http://localhost:5000/api/v1/eventflow/${eventId}/addstepflow`,  
+      const response = await axios.post(`https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${eventId}/addstepflow`,  
        { flowName, flowOrder, flowDescription, flowTag, adminName }
       );
       return { flowStep: response.data.flowStep, message: response.data.message };
@@ -77,7 +77,7 @@ export const deleteStepFlow = createAsyncThunk(
       console.log('EventFlowId:', eventId, 'StepFlowId:', stepFlowId);
 
       const response = await axios.post(
-        `http://localhost:5000/api/v1/eventflow/${eventId}/deletestepflow`,
+        `https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${eventId}/deletestepflow`,
         { stepFlowId, adminName }
       );
       return {eventFlowId: eventId, stepFlowId: stepFlowId, message: response.data.message};  // Assuming the response contains a message and success flag
@@ -91,7 +91,7 @@ export const updateStatus = createAsyncThunk(
   'eventFlows/updateStatus',
   async({eventId, flowId, flowStatus, adminName},{rejectWithValue}) => {
       try {
-        const response = await axios.put(`http://localhost:5000/api/v1/eventflow/${eventId}/updatestepflowstatus`,{flowId, flowStatus, adminName});
+        const response = await axios.put(`https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${eventId}/updatestepflowstatus`,{flowId, flowStatus, adminName});
         return {eventFlowId: eventId, stepFlowId: flowId, flowStatus: flowStatus, message: response.data.message};
       } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Error deleting step flow');
@@ -104,7 +104,7 @@ export const updateOrder = createAsyncThunk(
   'eventFlows/updateOrder',
   async({eventId, stepFlowId, flowOrder, adminName},{rejectWithValue}) => {
     try {
-        const response = await axios.put(`http://localhost:5000/api/v1/eventflow/${eventId}/updatestepfloworder`,{stepFlowId, flowOrder, adminName});
+        const response = await axios.put(`https://eventmanagement-bzf1.onrender.com/api/v1/eventflow/${eventId}/updatestepfloworder`,{stepFlowId, flowOrder, adminName});
         return {eventFlowId: eventId, stepFlowId: stepFlowId, flowOrder: flowOrder, message: response.data.message, flow: response.data.flow};
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || 'Error deleting step flow');

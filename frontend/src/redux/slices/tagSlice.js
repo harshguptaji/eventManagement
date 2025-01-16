@@ -6,7 +6,7 @@ export const fetchAllTags = createAsyncThunk(
   'tag/fetchAllTags',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://localhost:5000/api/v1/tag/all');  // Backend endpoint to fetch all tags
+      const response = await axios.get('https://eventmanagement-bzf1.onrender.com/api/v1/tag/all');  // Backend endpoint to fetch all tags
       return response.data;  // Return the tags from the response
     } catch (error) {
       return rejectWithValue(error.response.data);  // If error, return the error message
@@ -20,7 +20,7 @@ export const addNewTag = createAsyncThunk(
     async ({ name, description }, { rejectWithValue }) => {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/v1/tag/register',  // Backend endpoint
+          'https://eventmanagement-bzf1.onrender.com/api/v1/tag/register',  // Backend endpoint
           { name, description }
         );
         return response.data;  // Return the response data
@@ -33,7 +33,7 @@ export const addNewTag = createAsyncThunk(
   // Delete tag by ID
 export const deleteTagById = createAsyncThunk('tags/deleteTagById', async (tagId, { rejectWithValue }) => {
     try {
-        const response = await axios.delete(`http://localhost:5000/api/v1/tag/delete/${tagId}`);
+        const response = await axios.delete(`https://eventmanagement-bzf1.onrender.com/api/v1/tag/delete/${tagId}`);
         return { tagId, message: response.data.message };
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Error deleting tag');

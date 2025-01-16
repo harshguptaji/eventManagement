@@ -30,7 +30,7 @@ app.use(urlencoded({
     extended: true
 }));
 const corsOptions = {
-    origin: 'http://localhost:3000', // frontend url
+    origin: 'https://eventmanagement-bzf1.onrender.com', // frontend url
     credentials: true // enable setting of cokkies
 }
 

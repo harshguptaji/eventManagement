@@ -7,7 +7,7 @@ export const fetchEventAnalysis = createAsyncThunk(
     'eventAnalysis/fetchEventAnalysis',
     async (_, { rejectWithValue }) => {
         try {
-            const response = await axios.get('http://localhost:5000/api/v1/analysis/event'); // API endpoint
+            const response = await axios.get('https://eventmanagement-bzf1.onrender.com/api/v1/analysis/event'); // API endpoint
             return response.data.data;
         } catch (error) {
             return rejectWithValue(error.response?.data?.message || "Failed to fetch event analysis");

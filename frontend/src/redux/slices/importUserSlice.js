@@ -9,7 +9,7 @@ export const importUserData = createAsyncThunk(
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/csv/importflow', formData, {
+      const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/csv/importflow', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

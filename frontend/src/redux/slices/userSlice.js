@@ -7,7 +7,7 @@ export const fetchAllUsers = createAsyncThunk(
     'users/fetchAllUsers',
     async(_,{ rejectWithValue }) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/v1/user/all`);
+            const response = await axios.get(`https://eventmanagement-bzf1.onrender.com/api/v1/user/all`);
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response?.data?.message || 'An error occurred');
@@ -20,7 +20,7 @@ export const addNewUser = createAsyncThunk(
     'users/addNewUser',
     async({registrationId, name, number, brandName, batchName, adminName},{rejectWithValue}) => {
         try {
-            const response = await axios.post(`http://localhost:5000/api/v1/user/register`,
+            const response = await axios.post(`https://eventmanagement-bzf1.onrender.com/api/v1/user/register`,
             {registrationId, name, number, brandName, batchName, adminName});
             // return response.data.user;
             return response.data;
@@ -35,7 +35,7 @@ export const fetchUserById = createAsyncThunk(
     'users/fetchuserById',
     async(userId,{rejectWithValue}) => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/v1/user/${userId}`)
+            const response = await axios.get(`https://eventmanagement-bzf1.onrender.com/api/v1/user/${userId}`)
             return response.data;
         } catch (error) {
             return rejectWithValue(error.response.data);
@@ -48,7 +48,7 @@ export const updateUserById = createAsyncThunk(
     'users/updateUserById',
     async (updateUserData, { rejectWithValue }) => {
         try {
-            const response = await axios.put(`http://localhost:5000/api/v1/user/${updateUserData.userId}`, updateUserData);
+            const response = await axios.put(`https://eventmanagement-bzf1.onrender.com/api/v1/user/${updateUserData.userId}`, updateUserData);
             return response.data;
         } catch (error) {
             // Return custom error message
@@ -68,7 +68,7 @@ export const deleteUserById = createAsyncThunk(
     'users/deleteUserById',
     async(userId, {rejectWithValue}) => {
         try {
-            const response = axios.delete(`http://localhost:5000/api/v1/user/${userId}/delete`);
+            const response = axios.delete(`https://eventmanagement-bzf1.onrender.com/api/v1/user/${userId}/delete`);
             return {userId, message: (await response).data.message};
         } catch (error) {
             const errorMessage = error.response?.data?.message || "Failed to update user";

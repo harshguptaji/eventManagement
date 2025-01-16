@@ -7,7 +7,7 @@ export const fetchAllAdmins = createAsyncThunk(
     async (_, { rejectWithValue }) => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:5000/api/v1/admin/all', {
+        const response = await axios.get('https://eventmanagement-bzf1.onrender.com/api/v1/admin/all', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem(token)}`
           }
@@ -24,7 +24,7 @@ export const fetchAllAdmins = createAsyncThunk(
     'admin/createAdmin',
     async (adminData, { rejectWithValue }) => {
       try {
-        const response = await axios.post('http://localhost:5000/api/v1/admin/register', adminData);
+        const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/admin/register', adminData);
         return response.data;
       } catch (error) {
         return rejectWithValue(error.response.data);  // Handle only data to catch 'message'
@@ -33,7 +33,7 @@ export const fetchAllAdmins = createAsyncThunk(
   );
 
   export const fetchAdminById = createAsyncThunk('admin/fetchAdminById', async (id) => {
-    const response = await axios.get(`http://localhost:5000/api/v1/admin/${id}`);
+    const response = await axios.get(`https://eventmanagement-bzf1.onrender.com/api/v1/admin/${id}`);
     return response.data.admin;
   });
 
@@ -43,7 +43,7 @@ export const updateAdminInfo = createAsyncThunk(
   async ({ adminId, name, number, password, role }, { rejectWithValue }) => {
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/v1/admin/${adminId}/edit`,
+        `https://eventmanagement-bzf1.onrender.com/api/v1/admin/${adminId}/edit`,
         { name, number, password, role },
         { headers: { 'Content-Type': 'application/json' } }
       );
@@ -59,7 +59,7 @@ export const deleteAdmin = createAsyncThunk(
   'admin/deleteAdmin',
   async (adminId, { rejectWithValue }) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/v1/admin/${adminId}`);
+      const response = await axios.delete(`https://eventmanagement-bzf1.onrender.com/api/v1/admin/${adminId}`);
       return { adminId, success: true, message: response.data.message}; // Return the admin ID to remove it from the state
     } catch (error) {
       return rejectWithValue(error.response.data.message); // Handle error and return the message
@@ -73,7 +73,7 @@ export const addTagToAdmin = createAsyncThunk(
   async ({ adminId, tagName }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/v1/admin/${adminId}/newtag`,
+        `https://eventmanagement-bzf1.onrender.com/api/v1/admin/${adminId}/newtag`,
         { tagName }
       );
       return { adminId, tagName, message: response.data.message };
@@ -89,7 +89,7 @@ export const removeTagFromAdmin = createAsyncThunk(
   async ({ adminId, tagName }, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/v1/admin/${adminId}/removetag`, // Your backend endpoint for removing the tag
+        `https://eventmanagement-bzf1.onrender.com/api/v1/admin/${adminId}/removetag`, // Your backend endpoint for removing the tag
         { tagName }
       );
       return {adminId, tagName, message: response.data.message}; // Returns the data if successful

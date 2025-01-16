@@ -7,7 +7,7 @@ export const fetchAllEvents = createAsyncThunk(
   'events/fetchAllEvents',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await axios.get('http://localhost:5000/api/v1/event/all'); // Assuming the endpoint for fetching events is `/api/events`
+      const response = await axios.get('https://eventmanagement-bzf1.onrender.com/api/v1/event/all'); // Assuming the endpoint for fetching events is `/api/events`
       return response.data.events;
     } catch (error) {
       return rejectWithValue(error.response?.data?.message || 'An error occurred');
@@ -21,7 +21,7 @@ export const addNewEvent = createAsyncThunk(
     async ({ name, description, venue, date, adminName }, { rejectWithValue }) => {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/v1/event/register',  // Backend endpoint
+          'https://eventmanagement-bzf1.onrender.com/api/v1/event/register',  // Backend endpoint
           { name, description, venue, date, adminName }
         );
         return response.data;  // Return the response data
@@ -36,7 +36,7 @@ export const fetchEventById = createAsyncThunk(
   'event/fetchEventById',
   async (eventId, { rejectWithValue }) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/v1/event/${eventId}`);
+      const response = await axios.get(`https://eventmanagement-bzf1.onrender.com/api/v1/event/${eventId}`);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -63,7 +63,7 @@ export const updateEventById = createAsyncThunk(
   // Delete Event by ID
   export const deleteEventById = createAsyncThunk('event/deleteEventById', async (eventId, { rejectWithValue }) => {
     try {
-        const response = await axios.delete(`http://localhost:5000/api/v1/event/${eventId}/delete`);
+        const response = await axios.delete(`https://eventmanagement-bzf1.onrender.com/api/v1/event/${eventId}/delete`);
         return { eventId, message: response.data.message };
     } catch (error) {
         return rejectWithValue(error.response?.data?.message || 'Error deleting tag');
@@ -76,7 +76,7 @@ export const updateEventById = createAsyncThunk(
     'event/addUserToAdmin',
     async({eventid, userRegistration, adminName},{rejectWithValue}) => {
       try {
-        const response = await axios.post(`http://localhost:5000/api/v1/event/${eventid}/addnewuser`,{userRegistration, adminName});
+        const response = await axios.post(`https://eventmanagement-bzf1.onrender.com/api/v1/event/${eventid}/addnewuser`,{userRegistration, adminName});
         return {eventid, userRegistration, message: response.data.message};
       } catch (error) {
         return rejectWithValue(error.response.data.message);
@@ -89,7 +89,7 @@ export const updateEventById = createAsyncThunk(
     'event/removeUserFromEvent',
     async({eventid, userRegistration, adminName},{rejectWithValue}) => {
       try {
-        const response = await axios.post(`http://localhost:5000/api/v1/event/${eventid}/removeuser`,{userRegistration, adminName});
+        const response = await axios.post(`https://eventmanagement-bzf1.onrender.com/api/v1/event/${eventid}/removeuser`,{userRegistration, adminName});
         return {eventid, userRegistration, message: response.data.message, updateEvent: response.data.eventDetail};
       } catch (error) {
         return rejectWithValue(error.response.data.message);

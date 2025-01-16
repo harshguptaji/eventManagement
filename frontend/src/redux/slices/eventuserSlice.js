@@ -9,7 +9,7 @@ export const uploadEventUsers = createAsyncThunk(
             const formData = new FormData();
             formData.append('file', file);
 
-            const response = await axios.post('http://localhost:5000/api/v1/eventuserupload/importusers', formData, {
+            const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/eventuserupload/importusers', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

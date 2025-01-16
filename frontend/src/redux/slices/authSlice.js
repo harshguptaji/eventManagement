@@ -12,7 +12,7 @@ const initialState = {
 
 export const adminLogin = (credentials) => async (dispatch) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/admin/login', credentials,{
+      const response = await axios.post('https://eventmanagement-bzf1.onrender.com/api/v1/admin/login', credentials,{
         withCredentials: true, 
       });
       const { token, admin } = response.data;
