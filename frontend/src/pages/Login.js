@@ -41,7 +41,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" className='login-password '>Password :-</label>
+            <label htmlFor="password" className='login-password11'>Password :-</label>
             <input
             className='input-password00'
               type="password"
