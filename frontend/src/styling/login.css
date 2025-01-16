@@ -10,8 +10,14 @@
   text-align: center;
   font-size: 1.8vw;
 }
-.login-number, .login-password {
-  font-size: 1.4vw;
+.login-number{
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.login-password {
+font-size: 4vw;
+font-weight: 600;
 }
 
 .input-number00 {
@@ -68,9 +74,15 @@
   .login-title{
       font-size: 2vw;
   }
-  .login-number, .login-password {
-      font-size: 1.8vw;
-  }
+  .login-number{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.login-password {
+  font-size: 4vw;
+  font-weight: 600;
+}
   
   .input-number00 {
       padding: 0.5vw;
@@ -123,9 +135,15 @@
   .login-title{
       font-size: 2.8vw;
   }
-  .login-number, .login-password {
-      font-size: 2.5vw;
-  }
+  .login-number{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.login-password {
+  font-size: 4vw;
+  font-weight: 600;
+}
   
   .input-number00 {
       border: none;
@@ -177,10 +195,15 @@
   .login-title{
       font-size: 3vw;
   }
-  .login-number, .login-password {
-      font-size: 2.5vw;
-      font-weight: 600;
-  }
+  .login-number{
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.login-password {
+  font-size: 4vw;
+  font-weight: 600;
+}
   
   .input-number00{
       border: none;
@@ -232,10 +255,15 @@
   .login-title{
       font-size: 4.5vw;
   }
-  .login-number, .login-password {
+  .login-number{
       font-size: 4vw;
       font-weight: 600;
   }
+
+  .login-password {
+    font-size: 4vw;
+    font-weight: 600;
+}
   
   .input-number00 {
       border: none;

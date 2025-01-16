@@ -28,9 +28,9 @@ const Login = () => {
     return (
       <div className="login-container">
         <h2 className='login-title'>Admin Login</h2>
-        <form onSubmit={handleSubmit} className='form-container'>
-          <div className='div-center'>
-            <label htmlFor="number" className='login-number'>Number </label><br/>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="number" className='login-number'>Number :- </label>
             <input className='input-number00'
               type="number"
               id="number"
@@ -41,7 +41,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <label htmlFor="password" className='login-password '>Password</label><br/>
+            <label htmlFor="password" className='login-password '>Password :-</label>
             <input
             className='input-password00'
               type="password"
