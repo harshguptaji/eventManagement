@@ -1,0 +1,358 @@
+.main-div {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+  
+  /* Video styles remain constant */
+  .background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .background-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust transparency here */
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .client-page {
+    width: 50vw;
+    margin: auto;
+    margin-top: 8vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    font-family: 'Cuprum', sans-serif;
+    padding: 0.5vw 0.8vw;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+  
+  .logo {
+    position: absolute;
+    right: 5vw;
+    top: -7vw;
+    width: 10vw;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2vw;
+    color: #FE3A04;
+  }
+  
+  /* Input fields and buttons */
+  .input-client-reg{
+    border: none;
+    padding: 0.7vw 0.7vw;
+    width: 45%;
+    border-radius: 0.5vw;
+    font-family: 'Cuprum', sans-serif;
+    background: #e8e8e8;
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #969595;
+    font-size: 0.8vw;
+    margin-top: 1.2vw;
+    margin-left: 1.2vw;
+    color: #FE3A04;
+  }
+  .input-client-event {
+    border: none;
+    padding: 0.7vw 0.7vw;
+    width: 45%;
+    border-radius: 0.5vw;
+    font-family: 'Cuprum', sans-serif;
+    background: #e8e8e8;
+    box-shadow: 1px 1px 5px #c5c5c5, -1px -1px 5px #969595;
+    font-size: 0.8vw;
+    margin-top: 2vw;
+    margin-left: 3.2vw;
+    color: #FE3A04;
+  }
+  
+  .input-client-reg:focus, .input-client-event:focus {
+    box-shadow: inset 4px 4px 15px #c5c5c5, inset -4px -4px 15px #ffffff;
+    background: #e8e8e8;
+  }
+
+  .client-registration, .client-event {
+    font-size: 1.3vw;
+    color: #FE3A04;
+  }
+  
+  /* Button styles */
+  .get-event-flow {
+    font-size: 1.1vw;
+    padding: 0.4vw 0.2vw;
+    width: 10vw;
+    border-radius: 0.3vw;
+    border: none;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    color: #FE3A04;
+    font-family: 'Cuprum', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+.event-flow-steps-title{
+    font-size: 1.5vw;
+    color: #FE3A04;
+}
+
+.event-flow-steps-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+    gap: 2vw;
+}
+
+.event-flow-steps-flex li{
+    list-style: none;
+    margin: 0%;
+    background-color: black;
+    width: 30%;
+    padding: 1vw 1.5vw;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+  /* RESPONSIVENESS */
+  
+  /* Large screens (1440px and below) */
+  @media screen and (max-width: 1440px) {
+    .client-page {
+      margin-top: 13vw;
+      width: 60vw;
+    }
+    .logo {
+      position: absolute;
+      right: 5vw;
+      top: -10vw; 
+    }
+    .title {
+      font-size: 2.3vw;
+    }
+    .input-client-reg, .input-client-event {
+      width: 50%;
+      font-size: 1vw;
+    }
+    .event-flow-steps-flex{
+      gap: 2vw;
+  }
+  
+  .event-flow-steps-flex li{
+      width: 40%;
+      font-size: 1.3vw;
+  }
+  }
+  
+  /* Medium screens (1200px and below) */
+  @media screen and (max-width: 1200px) {
+    .client-page {
+      width: 70vw;
+      margin-top: 15vw;
+    }
+    .logo {
+      width: 12vw;
+      top: -10vw;
+    }
+    .title {
+      font-size: 2.5vw;
+    }
+    .client-registration, .client-event {
+      font-size: 1.7vw;
+    }
+    .input-client-reg, .input-client-event {
+      width: 60%;
+      font-size: 1.1vw;
+    }
+    .get-event-flow {
+      font-size: 1.3vw;
+      width: 12vw;
+    }
+    .event-flow-steps-flex li{
+      width: 40%;
+      font-size: 1.5vw;
+    }
+    .event-flow-steps-title{
+      font-size: 2.5vw;
+    }
+  }
+  
+  /* Small screens (768px and below) */
+  @media screen and (max-width: 850px) {
+    .client-page {
+      width: 80vw;
+      padding: 1.5vw;
+    }
+    .logo {
+      width: 15vw;
+      top: -9vw;
+    }
+    .title {
+      font-size: 3.5vw;
+      margin-bottom: 4vw;
+    }
+    .client-registration, .client-event {
+      font-size: 2.2vw;
+    }
+    .input-client-reg, .input-client-event {
+      width: 70%;
+      font-size: 1.5vw;
+      margin-bottom: 3vw;
+    }
+    .get-event-flow {
+      font-size: 2vw;
+      width: 15vw;
+      padding: 0.5vw 0vw;
+    }
+    .event-flow-steps-flex li{
+      width: 40%;
+      font-size: 2vw;
+    }
+    .event-flow-steps-title{
+      font-size: 3.5vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .client-page {
+      width: 85vw;
+      padding: 2vw;
+    }
+    .logo {
+      width: 25vw;
+      top: -12vw;
+    }
+    .title {
+      font-size: 4vw;
+      margin-bottom: 4vw;
+    }
+    .client-registration, .client-event {
+      font-size: 3vw;
+    }
+    .input-client-reg, .input-client-event {
+      width: 70%;
+      font-size: 1.5vw;
+      margin-bottom: 3vw;
+    }
+
+    .input-client-event {
+        margin-left: 6vw;
+    }
+
+    .get-event-flow {
+      font-size: 2.5vw;
+      width: 20vw;
+      padding: 0.9vw 0.3vw;
+    }
+
+    .event-flow-steps-flex li{
+      width: 60%;
+      font-size: 3vw;
+    }
+
+    .event-flow-steps-title{
+      font-size: 4.5vw;
+    }
+  }
+  
+  /* Extra small screens (480px and below) */
+  @media screen and (max-width: 480px) {
+    .main-div{
+      background-color: black;
+    }
+    .client-page {
+      width: 90vw;
+      padding: 2vw;
+      margin-top: 15vw;
+    }
+    .logo {
+      width: 30vw;
+      top: -9vw;
+    }
+    .title {
+      font-size: 6vw;
+      margin-top: 5vw;
+    }
+    .client-registration, .client-event {
+      font-size: 5vw;
+    }
+    .input-client-reg, .input-client-event {
+      width: 90%;
+      font-size: 4vw;
+      margin-left: 1vw;
+      margin-top: 3vw;
+      margin-bottom: 5vw;
+      padding: 3vw 3vw;
+    }
+    .get-event-flow {
+      font-size: 4vw;
+      width: 30vw;
+      padding: 2vw 0vw;
+      border-radius: 1vw;
+    }
+    .video-overlay {
+      position: fixed;
+      top: 0%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Adjust transparency here */
+      z-index: 0;
+    }
+    .background-video {
+      position: fixed;
+      top: 15%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      background-color: black;
+    }
+    .event-flow-steps-flex li{
+      width: 80%;
+      font-size: 4vw;
+    }
+    .event-flow-steps-title{
+      font-size: 4.5vw;
+    }
+  }
+  

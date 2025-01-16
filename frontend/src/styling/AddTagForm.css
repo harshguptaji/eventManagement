@@ -1,0 +1,281 @@
+.add-tag-container1{
+    width: 28vw;
+    margin: auto;
+    margin-top: 10vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 0.5vw 2vw;
+}
+
+.add-tag-title1{
+    text-align: center;
+    font-size: 1.8vw;
+}
+.add-tag-name1, .add-tag-description1 {
+    font-size: 1.4vw;
+}
+
+.input-name-tag1 {
+    border: none;
+    padding: 0.5vw;
+    width: 60%;
+    border-radius: 0.2vw;
+    background: #e8e8e8;
+    box-shadow: 10px 10px 20px #c5c5c5,
+           -10px -10px 20px #ffffff;
+    transition: 0.3s;
+    margin-bottom: 1.2vw;
+    margin-top: 1.2vw;
+    margin-left: 2.2vw;
+   }
+
+   .input-desc-tag1 {
+    border: none;
+    padding: 0.5vw;
+    width: 60%;
+    border-radius: 0.2vw;
+    background: #e8e8e8;
+    box-shadow: 10px 10px 20px #c5c5c5,
+           -10px -10px 20px #ffffff;
+    transition: 0.3s;
+    margin-bottom: 1.2vw;
+    margin-top: 1.2vw;
+    margin-left: 1.4vw;
+   }
+
+   
+.reg-event-btn-div11{
+    width: 40%;
+    margin: auto;
+}
+
+.reg-event-btn11{
+    width: 100%;
+    padding: 0.6vw 0.8vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 0.4vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1400px) {
+    .add-tag-container1{
+        width: 40vw;
+    }
+    
+    .add-tag-title1{
+        font-size: 2vw;
+    }
+    .add-tag-name1, .add-tag-description1 {
+        font-size: 1.8vw;
+    }
+    
+    .input-name-tag1 {
+        padding: 0.5vw;
+        transition: 0.3s;
+        margin-bottom: 1.2vw;
+        margin-top: 1.2vw;
+        margin-left: 2.3vw;
+        padding: 0.5vw;
+       }
+    
+       .input-desc-tag1 {
+        border: none;
+        padding: 0.5vw;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 1.2vw;
+        margin-top: 1.2vw;
+        margin-left: 1.3vw;
+        padding: 0.5vw;
+       }
+    
+       
+    .reg-event-btn-div11{
+        width: 40%;
+        margin: auto;
+    }
+    
+    .reg-event-btn11{
+        width: 100%;
+        padding: 0.7vw 0.8vw;
+        font-size: 1.3vw;
+        font-weight: 600;
+        border-radius: 0.4vw;
+        border: none;
+        cursor: pointer;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .add-tag-container1{
+        width: 50vw;
+    }
+    
+    .add-tag-title1{
+        font-size: 2.8vw;
+    }
+    .add-tag-name1, .add-tag-description1 {
+        font-size: 2.5vw;
+    }
+    
+    .input-name-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 1.2vw;
+        margin-top: 1.2vw;
+        margin-left: 3.4vw;
+        padding: 0.8vw;
+       }
+    
+       .input-desc-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 2vw;
+        margin-top: 1.5vw;
+        margin-left: 1.6vw;
+        padding: 0.8vw;
+       }
+    
+       
+    .reg-event-btn-div11{
+        width: 40%;
+        margin: auto;
+    }
+    
+    .reg-event-btn11{
+        padding: 1vw 0.8vw;
+        font-size: 1.9vw;
+        margin-top: 1vw;
+        margin-bottom: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    .add-tag-container1{
+        width: 58vw;
+    }
+    
+    .add-tag-title1{
+        font-size: 3vw;
+    }
+    .add-tag-name1, .add-tag-description1 {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    
+    .input-name-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 1.2vw;
+        margin-top: 1.2vw;
+        margin-left: 3.5vw;
+        padding: 1vw;
+    }
+    
+       .input-desc-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 2.5vw;
+        margin-top: 2vw;
+        margin-left: 1.8vw;
+        padding: 1vw;
+       }
+    
+       
+    .reg-event-btn-div11{
+        width: 45%;
+        margin: auto;
+    }
+    
+    .reg-event-btn11{
+        padding: 1.2vw 0.8vw;
+        font-size: 2.5vw;
+        margin-top: 1vw;
+        margin-bottom: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .add-tag-container1{
+        width: 90vw;
+    }
+    
+    .add-tag-title1{
+        font-size: 4.5vw;
+    }
+    .add-tag-name1, .add-tag-description1 {
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    
+    .input-name-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 1.2vw;
+        margin-top: 1.2vw;
+        margin-left: 5.5vw;
+        padding: 1.5vw 1vw;
+    }
+    
+       .input-desc-tag1 {
+        border: none;
+        width: 60%;
+        border-radius: 0.2vw;
+        background: #e8e8e8;
+        box-shadow: 10px 10px 20px #c5c5c5,
+               -10px -10px 20px #ffffff;
+        transition: 0.3s;
+        margin-bottom: 4.5vw;
+        margin-top: 3vw;
+        margin-left: 2.8vw;
+        padding: 1.5vw 1vw;
+       }
+    
+       
+    .reg-event-btn-div11{
+        width: 30%;
+        margin: auto;
+    }
+    
+    .reg-event-btn11{
+        padding: 1.8vw 0.8vw;
+        font-size: 3.2vw;
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+        border-radius: 1vw;
+    }
+}

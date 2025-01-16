@@ -1,0 +1,324 @@
+.loading{
+  text-align: center;
+  font-size: 1.5vw;
+  color: greenyellow;
+  margin-top: 3vw;
+}
+
+.register-admin-container{
+  width: 40%;
+  margin: auto;
+  margin-top: 7vw;
+  padding-top: 2vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.register-admin-title{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.label-reg-number, .label-reg-name, .label-reg-password,.label-reg-role{
+  font-size: 1.4vw;
+  font-weight: 600;
+  margin-right: 1vw;
+}
+
+.reg-number-div{
+  width: 21.5vw;
+  margin: auto;
+}
+.reg-name-div{
+  width: 21.5vw;
+  margin: auto;
+}
+.reg-password-div{
+  width: 21.5vw;
+  margin: auto;
+}
+.reg-role-div{
+  width: 21.5vw;
+  margin: auto;
+}
+.input-reg-number{
+  border: none;
+  padding: 0.8vw;
+  width: 12vw;
+  border-radius: 0.5vw;
+  background: #e8e8e8;
+  box-shadow: 10px 10px 40px #c5c5c5,
+         -10px -10px 40px #ffffff;
+  transition: 0.3s;
+  margin-bottom: 1.2vw;
+  margin-top: 1.2vw;
+  margin-left: 1vw;
+ }
+
+ .input-reg-name{
+  border: none;
+  padding: 0.8vw;
+  width: 12vw;
+  border-radius: 0.5vw;
+  background: #e8e8e8;
+  box-shadow: 10px 10px 20px #c5c5c5,
+         -10px -10px 20px #ffffff;
+  transition: 0.3s;
+  margin-bottom: 1.2vw;
+  margin-top: 1.2vw;
+  margin-left: 2.5vw;
+ }
+
+ .input-reg-password{
+  border: none;
+  padding: 0.7vw 0.5vw;
+  width: 12vw;
+  border-radius: 0.3vw;
+  background: #e8e8e8;
+  box-shadow: 10px 10px 20px #c5c5c5,
+         -10px -10px 20px #ffffff;
+  transition: 0.3s;
+  margin-bottom: 1.2vw;
+  margin-top: 1.2vw;
+  margin-left: 0.2vw;
+ }
+
+ .input-reg-role{
+      border: none;
+      padding: 1vw 0.8vw;
+      width: 13vw;
+      font-size: 0.8vw;
+      border-radius: 0.3vw;
+      background: #e8e8e8;
+      box-shadow: 10px 10px 20px #c5c5c5,
+          -10px -10px 20px #ffffff;
+      transition: 0.3s;
+      margin-bottom: 1.2vw;
+      margin-top: 1.2vw;
+      padding: 0.5vw;
+      margin-left: 3.5vw;
+ }
+ 
+ .input-reg-number:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 10px 10px 20px #c5c5c5,
+         inset -10px -10px 20px #ffffff;
+  transition: 0.3s;
+ }
+
+ .input-reg-name:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 10px 10px 20px #c5c5c5,
+         inset -10px -10px 20px #ffffff;
+  transition: 0.3s;
+ }
+
+ .input-reg-password:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 10px 10px 20px #c5c5c5,
+         inset -10px -10px 20px #ffffff;
+  transition: 0.3s;
+ }
+ .input-reg-role:focus {
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 10px 10px 20px #c5c5c5,
+         inset -10px -10px 20px #ffffff;
+  transition: 0.3s;
+ }
+
+ .add-admin-btn-reg-div{
+  width: 15.5vw;
+  margin: auto;
+ }
+
+ .add-admin-btn-reg {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 0.5vw;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  padding: 0.5vw 3vw;
+  justify-content: center;
+  line-height: normal;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 2.5vw;
+  will-change: transform,opacity;
+  z-index: 0;
+  margin-top: 1.5vw;
+}
+
+.add-admin-btn-reg:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.add-admin-btn-reg:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.add-admin-btn-reg:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.add-admin-btn-reg:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.add-admin-btn-reg:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.add-admin-btn-reg:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.add-admin-btn-reg:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.add-admin-btn-reg:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+@media screen and (max-width: 1250px) {
+.update-admin-container{
+  width: 60%;
+}
+
+.update-admin-title{
+    font-size: 2.5vw;
+}
+
+.label-reg-number, .label-reg-name, .label-reg-password,.label-reg-role{
+    font-size: 2vw;
+}
+
+.reg-number-div{
+    width: 30vw;
+}
+.reg-name-div{
+  width: 30vw;
+}
+.reg-password-div{
+  width: 30vw;
+}
+.reg-role-div{
+  width: 30vw;
+}
+.input-reg-number{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 1.7vw;
+}
+.input-reg-name{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 3.8vw;
+}
+
+.input-reg-password{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 0.1vw;
+}
+
+.input-reg-role{
+  padding: 0.9vw 0.5vw;
+  width: 19vw;
+  margin-left: 5vw;
+  font-size: 1.4vw;
+}
+   
+.add-admin-btn-reg-div{
+    width: 20vw;
+}
+
+.add-admin-btn-reg{
+  width: 100%;   
+  font-size: 1.5vw;
+  padding: 0.8vw 0vw;
+  margin-top: 2vw;
+}
+}
+
+@media screen and (max-width: 768px) {
+.register-admin-container{
+  width: 80%;
+}
+
+.register-admin-title{
+    font-size: 3.5vw;
+}
+
+.label-reg-number, .label-reg-name, .label-reg-password,.label-reg-role{
+    font-size: 2vw;
+}
+
+.reg-number-div{
+    width: 30vw;
+}
+.reg-name-div{
+  width: 30vw;
+}
+.reg-password-div{
+  width: 30vw;
+}
+.reg-role-div{
+  width: 30vw;
+}
+.input-reg-number{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 1.7vw;
+}
+.input-reg-name{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 3.8vw;
+}
+
+.input-reg-password{
+  padding: 0.9vw 0.5vw;
+  width: 18vw;
+  margin-left: 0.1vw;
+}
+
+.input-reg-role{
+  padding: 0.9vw 0.5vw;
+  width: 19vw;
+  margin-left: 5vw;
+  font-size: 1.4vw;
+}
+   
+.add-admin-btn-reg-div{
+    width: 20vw;
+}
+
+.add-admin-btn-reg {
+  width: 100%;   
+  font-size: 1.5vw;
+  padding: 0.8vw 0vw;
+  margin-top: 2vw;
+}
+}
+

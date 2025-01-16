@@ -1,0 +1,269 @@
+.tags-container{
+  position: absolute;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 80%;
+}
+
+.tags-title{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.add-tag-btn{
+  position: absolute;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  justify-content: center;
+  padding: 0.7vw 0rem;
+  width: 15%;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  right: 5%;
+  }
+  
+  .add-tag-btn:active,
+  .add-tag-btn:hover {
+    outline: 0;
+  }
+  
+  .add-tag-btn:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+
+  .tag-inner-container{
+    padding: 0%;    
+  }
+  .tag-inner-container li{
+    display: flex;
+    list-style: none;
+  }
+  .tag-inner-container1{
+    padding: 0%;
+    margin-top: 7vw;
+  }
+  .tag-inner-container1 li{
+    list-style: none;
+  }
+  .flex1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tag-inner-name1{
+    width: 33.33%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .tag-inner-description1{
+    width: 33.33%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  
+  .tag-inner-btn-div1{
+    width: 33.33%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .tag-inner-name{
+    width: 33.33%;
+    font-size: 1.2vw;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .tag-inner-description{
+    width: 33.33%;
+    font-size: 1.1vw;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .tag-inner-btn-div{
+    width: 33.33%;
+    font-size: 1.2vw;
+    padding: 0.1vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .tag-del-btn{
+    align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 1.2vw;
+  justify-content: center;
+  padding: 0.6vw 0rem;
+  width: 60%;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  
+  .tag-del-btn:active,
+  .tag-del-btn:hover {
+    outline: 0;
+  }
+  
+  .tag-del-btn:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+
+  @media screen and (max-width: 1067px) {
+    .tags-container{
+      margin-left: 25%;
+      width: 75%;
+    }    
+  }
+
+  @media screen and (max-width: 768px) {
+    .tags-container{
+      margin-left: 28%;
+      width: 72%;
+    }    
+    .tags-title{
+      text-align: center;
+      font-size: 3vw;
+    }
+    .add-tag-btn{
+      font-size: 1.7vw;
+      width: 20%;
+      padding: 1vw 0vw;
+    }
+    .tag-inner-container1{
+      margin-top: 9vw;
+    }
+
+    .tag-inner-name1{
+      font-size: 2vw;
+      padding: 1vw 0rem;
+    }
+  
+    .tag-inner-description1{
+      font-size: 2vw;
+      padding: 1vw 0rem;
+    }
+    
+    .tag-inner-btn-div1{
+      font-size: 2vw;
+      padding: 1vw 0rem;
+    }
+  
+    .tag-inner-name{
+      font-size: 1.5vw;
+      padding: 0.8vw 0rem;
+    }
+  
+    .tag-inner-description{
+      font-size: 1.3vw;
+      padding: 0.8vw 0rem;
+    }
+  
+    .tag-inner-btn-div{
+      font-size: 1.5vw;
+      padding: 0.2vw 0rem;
+    }
+  
+    .tag-del-btn{
+      font-size: 1.4vw;
+      padding: 0.6vw 0vw;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .tags-container{
+      margin-left: 0%;
+      width: 100%;
+    }    
+    .tags-title{
+      font-size: 4vw;
+      margin-top: 6vw;
+    }
+    .add-tag-btn{
+      font-size: 2.2vw;
+      padding: 1vw 0vw;
+    }
+    .tag-inner-container1{
+      margin-top: 12vw;
+    }
+
+    .tag-inner-name1{
+      font-size: 2.4vw;
+      padding: 1.2vw 0rem;
+    }
+  
+    .tag-inner-description1{
+      font-size: 2.4vw;
+      padding: 1.2vw 0rem;
+    }
+    
+    .tag-inner-btn-div1{
+      font-size: 2.4vw;
+      padding: 1.2vw 0rem;
+    }
+  
+    .tag-inner-name{
+      font-size: 1.8vw;
+      padding: 1vw 0rem;
+    }
+  
+    .tag-inner-description{
+      font-size: 1.6vw;
+      padding: 1vw 0rem;
+    }
+  
+    .tag-inner-btn-div{
+      font-size: 1.8vw;
+      padding: 0.2vw 0rem;
+    }
+  
+    .tag-del-btn{
+      font-size: 1.8vw;
+      padding: 0.8vw 0rem;
+    }
+  }
+
+ 
+  
+  

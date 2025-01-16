@@ -1,0 +1,374 @@
+.adminsInfo-container{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 7%;
+  padding-top: 3vw;
+}
+
+.adminsInfo-title{
+  text-align: center;
+  font-size: 2vw;
+}
+
+.edit-admin-btn1{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 15%;
+  font-size: 1.1vw;
+  font-weight: 500;
+  padding: 0.4vw 0vw;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.3vw;
+}
+
+.edit-admin-btn1:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.adminsInfo-1{
+  text-align: center;
+}
+
+.adminsInfo-11{
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-right: 0.5vw;
+}
+
+.adminsInfo-111{
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+.adminsInfo-666{
+  font-size: 1.1vw;
+  display: flex;
+  justify-content: center;
+  gap: 0.5vw;
+  flex-wrap: wrap;
+}
+.adminsInfo-666 li{
+  list-style: none;
+}
+
+.adminsInfo-7{
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.tag-admin-container{
+  width: 33%;
+}
+.tag-admin-container1{
+  width: 33%;
+}
+.tag-admin-title{
+  text-align: center;
+  font-size: 1.2vw;
+}
+.select-tag{
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  padding: 0.3vw 0.5vw;
+  border-radius: 0.3vw;
+  margin-bottom: 1vw;
+  margin-right: 2vw;
+  width: 10vw;
+}
+.add-tag-btn-admin{
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 0.8vw;
+  justify-content: center;
+  padding: 0.4vw 0rem;
+  width: 6.5vw;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.tad-admin-form{
+  width: 100%;
+  margin: auto;
+}
+
+.select-tag1{
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: black;
+  padding: 0.3vw 0.5vw;
+  border-radius: 0.3vw;
+  margin-bottom: 1vw;
+  margin-right: 2vw;
+  width: 10vw;
+}
+
+.add-tag-btn-admin1{
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  color: #000000;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 0.8vw;
+  justify-content: center;
+  padding: 0.4vw 0.2vw;
+  width: 6.5vw;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 3vw;
+}
+
+.tad-admin-form1{
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .adminsInfo-container{
+    width: 75%;
+  }
+
+  .adminsInfo-title{
+    font-size: 2.5vw;
+  }
+  
+  .edit-admin-btn1{
+    font-size: 1.2vw;
+    padding: 0.5vw 0vw;
+  }
+  
+  .adminsInfo-11{
+    font-size: 1.6vw;
+  }
+  
+  .adminsInfo-111{
+    font-size: 1.4vw;
+  }
+  
+  .adminsInfo-666{
+    font-size: 1.4vw;
+  }
+  
+  .adminsInfo-7{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+  }
+  
+  .tag-admin-container{
+    width: 35%;
+  }
+  .tag-admin-container1{
+    width: 35%;
+  }
+  .tag-admin-title{
+    font-size: 1.5vw;
+  }
+  .select-tag{
+    padding: 0.5vw 0.5vw;
+    width: 15vw;
+    font-size: 1.1vw;
+  }
+  .add-tag-btn-admin{
+    font-size: 1.2vw;
+    padding: 0.6vw 0rem;
+    width: 8vw;
+  }
+  
+  .select-tag1{
+    padding: 0.5vw 0.5vw;
+    width: 13vw;
+    font-size: 1.1vw;
+  }
+  
+  .add-tag-btn-admin1{
+    font-size: 1.2vw;
+    padding: 0.6vw 0rem;
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tag-admin-container{
+    width: 40%;
+  }
+  .tag-admin-container1{
+    width: 40%;
+  }
+  .tag-admin-title{
+    font-size: 1.8vw;
+  }
+  .select-tag{
+    width: 18vw;
+    font-size: 1.3vw;
+  }
+  .add-tag-btn-admin{
+    font-size: 1.4vw;
+    width: 10vw;
+  }
+  
+  .select-tag1{
+    width: 15vw;
+    font-size: 1.3vw;
+  }
+  
+  .add-tag-btn-admin1{
+    font-size: 1.4vw;
+    width: 12vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .adminsInfo-container{
+    width: 85%;
+  }
+
+  .adminsInfo-title{
+    font-size: 3.2vw;
+  }
+  
+  .edit-admin-btn1{
+    font-size: 1.7vw;
+    padding: 0.8vw 0vw;
+    width: 18%;
+  }
+  
+  .adminsInfo-11{
+    font-size: 2vw;
+  }
+  
+  .adminsInfo-111{
+    font-size: 1.8vw;
+  }
+  
+  .adminsInfo-666{
+    font-size: 1.7vw;
+  }
+  
+  .adminsInfo-7{
+    gap: 4vw;
+  }
+  
+
+  .tag-admin-container{
+    width: 45%;
+  }
+  .tag-admin-container1{
+    width: 45%;
+  }
+  .tag-admin-title{
+    font-size: 2.4vw;
+  }
+  .select-tag{
+    width: 22vw;
+    font-size: 1.5vw;
+  }
+  .add-tag-btn-admin{
+    font-size: 1.7vw;
+    width: 12vw;
+  }
+  
+  .select-tag1{
+    width: 20vw;
+    font-size: 1.5vw;
+    padding: 0.8vw 1vw;
+  }
+  
+  .add-tag-btn-admin1{
+    font-size: 1.7vw;
+    width: 14vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .adminsInfo-container{
+    width: 97%;
+  }
+
+  .adminsInfo-title{
+    font-size: 5vw;
+  }
+  
+  .edit-admin-btn1{
+    font-size: 3.1vw;
+    padding: 1.5vw 0vw;
+    width: 25%;
+    right: 2%;
+  }
+  
+  .adminsInfo-11{
+    font-size: 4vw;
+  }
+  
+  .adminsInfo-111{
+    font-size: 3.5vw;
+  }
+  
+  .adminsInfo-666{
+    font-size: 3.5vw;
+    padding: 0%;
+  }
+  
+  .adminsInfo-7{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .tag-admin-container{
+    width: 60%;
+  }
+  .tag-admin-container1{
+    width: 65%;
+  }
+  .tag-admin-title{
+    font-size: 4vw;
+  }
+  .select-tag{
+    width: 35vw;
+    font-size: 3vw;
+    padding: 1vw 1vw;
+  }
+  .add-tag-btn-admin{
+    font-size: 3vw;
+    width: 17vw;
+    padding: 1vw 0.5vw;
+    margin-left: 3vw;
+  }
+  
+  .select-tag1{
+    width: 31vw;
+    font-size: 2.7vw;
+    padding: 1vw 1vw;
+  }
+  
+  .add-tag-btn-admin1{
+    font-size: 3vw;
+    width: 24vw;
+    padding: 1vw 1vw;
+    margin-left: 2vw;
+    margin-bottom: 5vw;
+  }
+}

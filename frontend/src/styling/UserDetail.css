@@ -1,0 +1,132 @@
+.userInfo-container{
+    width: 50%;
+    margin: auto;
+    margin-top: 5vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.5vw 1.5vw 1.5vw 1.5vw;
+}
+.userInfo-title{
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+/* CSS */
+.edit-admin-btn {
+    position: absolute;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  left: 80%;
+}
+
+.edit-admin-btn:hover {
+  background-color: #f7fafa;
+}
+
+.edit-admin-btn:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+.userInfo-1, .userInfo-2, .userInfo-3, .userInfo-4, .userInfo-5{
+    text-align: center;
+}
+.userInfo-11,.userInfo-22, .userInfo-33, .userInfo-44, .userInfo-55{
+    margin-right: 0.5vw;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.userInfo-111, .userInfo-222, .userInfo-333, .userInfo-444, .userInfo-555{
+    font-size: 1.3vw;
+}
+
+
+@media screen and (max-width: 1240px) {
+  .userInfo-container{
+    width: 60%;
+  }
+
+  .userInfo-title{
+      font-size: 3vw;
+  }
+
+  .userInfo-11,.userInfo-22, .userInfo-33, .userInfo-44, .userInfo-55{
+      font-size: 2vw;
+  }
+  .userInfo-111, .userInfo-222, .userInfo-333, .userInfo-444, .userInfo-555{
+      font-size: 1.7vw;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .userInfo-container{
+    width: 65%;
+  }
+
+  .userInfo-title{
+      font-size: 3.3vw;
+  }
+
+  .userInfo-11,.userInfo-22, .userInfo-33, .userInfo-44, .userInfo-55{
+      font-size: 2.5vw;
+  }
+  .userInfo-111, .userInfo-222, .userInfo-333, .userInfo-444, .userInfo-555{
+      font-size: 2vw;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .userInfo-container{
+    width: 85%;
+  }
+
+  .userInfo-title{
+    font-size: 4.5vw;
+  }
+
+  .userInfo-11,.userInfo-22, .userInfo-33, .userInfo-44, .userInfo-55{
+    font-size: 3.5vw;
+  }
+  .userInfo-111, .userInfo-222, .userInfo-333, .userInfo-444, .userInfo-555{
+    font-size: 2.7vw;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .userInfo-container{
+    width: 95%;
+  }
+
+  .userInfo-title{
+    font-size: 6.5vw;
+  }
+
+  .userInfo-11,.userInfo-22, .userInfo-33, .userInfo-44, .userInfo-55{
+    font-size: 5.5vw;
+  }
+  .userInfo-111, .userInfo-222, .userInfo-333, .userInfo-444, .userInfo-555{
+    font-size: 4.7vw;
+  }
+
+}

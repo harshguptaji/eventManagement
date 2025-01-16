@@ -1,0 +1,330 @@
+.add-event-container {
+  width: 25vw;
+  margin: auto;
+  margin-top: 10vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 0.5vw 2vw;
+}
+
+.add-event-title {
+  text-align: center;
+  font-size: 2vw;
+}
+.event-name,
+.event-description,
+.event-venue,
+.event-date {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.input-name-event1 {
+  border: none;
+  padding: 0.5vw;
+  width: 15vw;
+  border-radius: 0.2vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+  margin-bottom: 1.5vw;
+  margin-top: 1.2vw;
+  margin-left: 4vw;
+}
+
+.input-desc-event1 {
+  border: none;
+  padding: 0.5vw;
+  width: 15vw;
+  border-radius: 0.2vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+  margin-bottom: 1.5vw;
+  margin-left: 0.8vw;
+}
+
+.input-venue-event1 {
+  border: none;
+  padding: 0.5vw;
+  width: 15vw;
+  border-radius: 0.2vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+  margin-bottom: 1.2vw;
+  margin-left: 3.7vw;
+}
+
+.input-date-event1 {
+  border: none;
+  padding: 0.5vw;
+  width: 15vw;
+  border-radius: 0.2vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.3s;
+  margin-bottom: 1.2vw;
+  margin-left: 4.5vw;
+}
+
+.reg-event-btn-div {
+  width: 30%;
+  margin: auto;
+}
+
+.reg-event-btn {
+  width: 100%;
+  padding: 0.6vw 0.8vw;
+  font-size: 1vw;
+  font-weight: 600;
+  border-radius: 0.4vw;
+  border: none;
+  cursor: pointer;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 1440px) {
+  .add-event-container {
+    width: 35vw;
+    padding: 1vw 2vw 1vw 2vw;
+  }
+
+  .add-event-title {
+    font-size: 2.3vw;
+  }
+  .event-name,
+  .event-description,
+  .event-venue,
+  .event-date {
+    font-size: 1.8vw;
+  }
+
+  .input-name-event1 {
+    padding: 0.7vw 1vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    margin-top: 1.2vw;
+    margin-left: 6vw;
+  }
+
+  .input-desc-event1 {
+    padding: 0.7vw 1vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    margin-top: 1vw;
+    margin-left: 1.6vw;
+  }
+
+  .input-venue-event1 {
+    padding: 0.7vw 1vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    margin-top: 1vw;
+    margin-left: 5.5vw;
+  }
+
+  .input-date-event1 {
+    padding: 0.7vw 1vw;
+    width: 20vw;
+    border-radius: 0.3vw;
+    margin-top: 1vw;
+    margin-left: 6.6vw;
+  }
+
+  .reg-event-btn-div1 {
+    width: 50%;
+    margin: auto;
+  }
+
+  .reg-event-btn1 {
+    width: 100%;
+    padding: 0.8vw 0.8vw;
+    font-size: 1.6vw;
+    font-weight: 600;
+    border-radius: 0.4vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 2vw;
+    margin-bottom: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 980px) {
+    .add-event-container {
+      width: 50vw;
+    }
+  
+    .add-event-title {
+      font-size: 3.7vw;
+    }
+    .event-name,
+    .event-description,
+    .event-venue,
+    .event-date {
+      font-size: 2.5vw;
+    }
+  
+    .input-name-event1 {
+      width: 28vw;
+      padding: 0.8vw 1vw 0.8vw 1vw;
+      margin-left: 8vw;
+    }
+  
+    .input-desc-event1 {
+        width: 28vw;
+        padding: 0.8vw 1vw 0.8vw 1vw;
+        margin-left: 2vw;
+    }
+  
+    .input-venue-event1 {
+        width: 28vw;
+        padding: 0.8vw 1vw 0.8vw 1vw;
+        margin-left: 7.5vw;
+    }
+  
+    .input-date-event1 {
+        width: 28vw;
+        padding: 0.8vw 1vw 0.8vw 1vw;
+        margin-left: 9vw;
+    }
+  
+    .reg-event-btn-div1 {
+      width: 50%;
+    }
+  
+    .reg-event-btn1 {
+      width: 100%;
+      padding: 0.8vw 0.8vw;
+      font-size: 2.7vw;
+      font-weight: 600;
+      border-radius: 0.5vw;
+      border: none;
+      cursor: pointer;
+      margin-top: 2vw;
+      margin-bottom: 1.5vw;
+    }
+  }
+
+  @media screen and (max-width: 634px) {
+    .add-event-container {
+      width: 70vw;
+    }
+  
+    .add-event-title {
+      font-size: 4.5vw;
+    }
+
+    .event-name,
+    .event-description,
+    .event-venue,
+    .event-date {
+      font-size: 3.5vw;
+    }
+  
+    .input-name-event1 {
+      width: 40vw;
+      padding: 1vw;
+      margin-left: 11vw;
+      margin-bottom: 3vw;
+    }
+  
+    .input-desc-event1 {
+        width: 40vw;
+        padding: 1vw;
+        margin-left: 2.8vw;
+        margin-bottom: 3vw;
+    }
+  
+    .input-venue-event1 {
+        width: 40vw;
+        padding: 1vw;
+        margin-left: 10.5vw;
+        margin-bottom: 3vw;
+    }
+  
+    .input-date-event1 {
+        width: 40vw;
+        padding: 1vw;
+        margin-left: 12.5vw;
+        margin-bottom: 3vw;
+    }
+  
+    .reg-event-btn-div1 {
+      width: 50%;
+    }
+  
+    .reg-event-btn1 {
+      width: 100%;
+      padding: 1vw 0.8vw;
+      font-size: 3.2vw;
+      font-weight: 600;
+      border-radius: 0.5vw;
+      border: none;
+      cursor: pointer;
+      margin-top: 2vw;
+      margin-bottom: 1.5vw;
+    }
+  }
+  
+
+  @media screen and (max-width: 450px) {
+    .add-event-container {
+      width: 90vw;
+    }
+  
+    .add-event-title {
+      font-size: 6vw;
+    }
+
+    .event-name,
+    .event-description,
+    .event-venue,
+    .event-date {
+      font-size: 5vw;
+    }
+  
+    .input-name-event1 {
+      width: 52vw;
+      padding: 1.4vw;
+      margin-left: 15vw;
+      margin-bottom: 4vw;
+    }
+  
+    .input-desc-event1 {
+        width: 52vw;
+      padding: 1.4vw;
+      margin-left: 2.5vw;
+      margin-bottom: 4vw;
+    }
+  
+    .input-venue-event1 {
+        width: 52vw;
+        padding: 1.4vw;
+        margin-left: 14vw;
+        margin-bottom: 4vw;
+    }
+  
+    .input-date-event1 {
+        width: 52vw;
+      padding: 1.4vw;
+      margin-left: 17vw;
+      margin-bottom: 4vw;
+    }
+  
+    .reg-event-btn-div1 {
+      width: 50%;
+    }
+  
+    .reg-event-btn1 {
+      width: 100%;
+      padding: 1.4vw 0.8vw;
+      font-size: 4.5vw;
+      font-weight: 600;
+      border-radius: 0.5vw;
+      border: none;
+      cursor: pointer;
+      margin-top: 3vw;
+      margin-bottom: 3vw;
+    }
+  }

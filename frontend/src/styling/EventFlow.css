@@ -1,0 +1,354 @@
+.eventFlow-container{
+  position: absolute;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: 5%;
+  width: 80%;
+}
+
+.eventFlow-title{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.add-eventFlow-btn{
+  position: absolute;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 1.2vw;
+  font-weight: 550;
+  justify-content: center;
+  padding: 0.7vw 0rem;
+  width: 20%;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  right: 5%;
+}
+  
+  .add-eventFlow-btn:active,
+  .add-eventFlow-btn:hover {
+    outline: 0;
+  }
+  
+  .add-eventFlow-btn:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+
+  .eventFlow-inner-container{
+    padding: 0%;    
+  }
+  .eventFlow-inner-container li{
+    display: flex;
+    list-style: none;
+  }
+  .eventFlow-inner-container1{
+    padding: 0%;
+    margin-top: 6vw;
+  }
+  .eventFlow-inner-container1 li{
+    list-style: none;
+  }
+  .flex1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .eventFlow-inner-name1{
+    width: 26%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-inner-number1{
+    width: 18%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .eventFlow-inner-role1{
+    width: 18%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .eventFlow-inner-tags1{
+    width: 18%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7vw 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-inner-btn-div1{
+    width: 20%;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 0.7rem 0rem;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-inner-name{
+    width: 26%;
+    font-size: 1.2vw;
+    padding: 0.5vw 0vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-inner-number{
+    width: 18%;
+    font-size: 1.2vw;
+    padding: 0.5vw 0vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .eventFlow-inner-role{
+    width: 18%;
+    font-size: 1.2vw;
+    padding: 0.5vw 0vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  .eventFlow-inner-tags{
+    width: 18%;
+    font-size: 1.2vw;
+    padding: 0.5vw 0vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-inner-btn-div{
+    width: 20%;
+    font-size: 1.2vw;
+    padding: 0.1vw 0vw;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+
+  .eventFlow-del-btn{
+    align-items: center;
+    background-color: rgba(240, 240, 240, 0.26);
+    border: 1px solid #dfdfdf;
+    border-radius: 0.3vw;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: 1.2vw;
+    justify-content: center;
+    padding: 0.4vw 0rem;
+    width: 60%;
+    text-decoration: none;
+    transition: all 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .admin-del-btn:active,
+  .admin-del-btn:hover {
+    outline: 0;
+  }
+  
+  .admin-del-btn:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(0, 0, 0, 0.19);
+  }
+
+  @media screen and (max-width: 1067px ) {
+    .eventFlow-container{
+      margin-left: 25%;
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 768px ) {
+    .eventFlow-container{
+      margin-left: 28%;
+      width: 72%;
+    }
+    .eventFlow-title{
+      font-size: 3vw;
+    }
+    .add-eventFlow-btn{
+      font-size: 1.5vw;
+      width: 25%;
+      padding: 0.6vw 0vw;
+    }
+    .eventFlow-inner-container1{
+      margin-top: 8vw;
+    }
+
+    .eventFlow-inner-name1{
+      font-size: 1.7vw;
+      font-weight: 500;
+      padding: 0.7vw 0rem;
+    }
+  
+    .eventFlow-inner-number1{
+      font-size: 1.7vw;
+      font-weight: 500;
+      padding: 0.7vw 0rem;
+
+    }
+    .eventFlow-inner-role1{
+      font-size: 1.7vw;
+      font-weight: 500;
+      padding: 0.7vw 0rem;
+    }
+    .eventFlow-inner-tags1{
+      font-size: 1.7vw;
+      font-weight: 500;
+      padding: 0.7vw 0rem;
+
+    }
+  
+    .eventFlow-inner-btn-div1{
+      font-size: 1.7vw;
+      font-weight: 500;
+      padding: 0.7vw 0rem;
+    }
+  
+    .eventFlow-inner-name{
+      font-size: 1.5vw;
+      padding: 0.7vw 0vw;
+    }
+  
+    .eventFlow-inner-number{
+      font-size: 1.5vw;
+      padding: 0.7vw 0vw;
+    }
+    .eventFlow-inner-role{
+      font-size: 1.5vw;
+      padding: 0.7vw 0vw;
+    }
+    .eventFlow-inner-tags{
+      font-size: 1.5vw;
+      padding: 0.7vw 0vw;
+    }
+  
+    .eventFlow-inner-btn-div{
+      font-size: 1.5vw;
+      padding: 0.2vw 0vw;
+    }
+    
+    .eventFlow-del-btn{
+      font-size: 1.4vw;
+      padding: 0.5vw 0rem;
+      font-weight: 500;
+    }
+
+  }
+  @media screen and (max-width: 570px) {
+    .eventFlow-container{
+      margin-left: 0%;
+      width: 100%;
+    }
+    .eventFlow-title{
+      font-size: 4vw;
+      margin-top: 6vw;
+    }
+    .add-eventFlow-btn{
+      font-size: 1.9vw;
+      width: 25%;
+      padding: 0.8vw 0vw;
+    }
+    .eventFlow-inner-container1{
+      margin-top: 11vw;
+    }
+
+    .eventFlow-inner-name1{
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 1vw 0rem;
+    }
+  
+    .eventFlow-inner-number1{
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 1vw 0rem;
+    }
+    .eventFlow-inner-role1{
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 1vw 0rem;
+    }
+    .eventFlow-inner-tags1{
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 1vw 0rem;
+    }
+  
+    .eventFlow-inner-btn-div1{
+      font-size: 2.3vw;
+      font-weight: 600;
+      padding: 1vw 0rem;
+    }
+  
+    .eventFlow-inner-name{
+      font-size: 2vw;
+      padding: 1vw 0vw;
+    }
+  
+    .eventFlow-inner-number{
+      font-size: 2.1vw;
+      padding: 1vw 0vw;
+    }
+    .eventFlow-inner-role{
+      font-size: 2.1vw;
+      padding: 1vw 0vw;
+    }
+    .eventFlow-inner-tags{
+      font-size: 2.1vw;
+      padding: 1vw 0vw;
+    }
+  
+    .eventFlow-inner-btn-div{
+      font-size: 2.1vw;
+      padding: 0.3vw 0vw;
+    }
+    
+    .eventFlow-del-btn{
+      font-size: 1.8vw;
+      padding: 0.7vw 0rem;
+      font-weight: 500;
+    }
+  }
+
+ 
+  
+  

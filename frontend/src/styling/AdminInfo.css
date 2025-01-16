@@ -1,0 +1,57 @@
+/* .adminInfo-container{
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    border: 1px solid black;
+    margin-left: 19.4vw;
+    top: 10%;
+    width: 80.5vw;
+    
+}
+
+.adminInfo-Small-container{
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.adminInfo-text1{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.btn-logout{
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #DFDFDF;
+  border-radius: 0.4vw;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 1.2vw;
+  justify-content: center;
+  line-height: 28px;
+  padding: 0.3vw 0rem;
+  width: 25%;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 5vw;
+}
+
+.btn-logout:active,
+.btn-logout:hover {
+  outline: 0;
+}
+
+.btn-logout:hover {
+  background-color: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.19);
+}
+
+
+ */
