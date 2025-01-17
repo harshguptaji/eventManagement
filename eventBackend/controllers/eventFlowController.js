@@ -691,10 +691,8 @@ export const updateStatusStepFlow = async(req,res) => {
         const num = `+91${customer.number}`;
         console.log(num);
         console.log(`${customer.number}`);
-        const accountSid = 'ACd1d05f36a8399391b13df5f1fe8d1642'; // Twilio Account SID
-        const authToken = '9552a8234edaefec50982587e1efb584';   // Twilio Auth Token
-        const mob_number = '+16812010071';
-        const what_mob_number = '+14155238886';
+        const accountSid = process.env.TWILIO_ACCOUNT_SID; // Twilio Account SID
+        const authToken = process.env.TWILIO_AUTH_TOKEN;   // Twilio Auth Token
         const client = twilio(accountSid, authToken);
         // Send SMS notification
         try {
@@ -702,7 +700,7 @@ export const updateStatusStepFlow = async(req,res) => {
             console.log(messageContent);
             const message = await client.messages.create({
                 body: messageContent,
-                from: mob_number, // Twilio phone number
+                from: process.env.TWILIO_PHONE_NUMBER, // Twilio phone number
                 to: `+91${customer.number}` // Customer phone number
             });
             console.log('SMS sent successfully:', message.sid);
@@ -713,7 +711,7 @@ export const updateStatusStepFlow = async(req,res) => {
         const whatsAppMessageContent = `Hello, your junior : ${customer.name}, in this processor "${currentStep.flowName}" and it has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}. Thank You!`;
         const whatsAppMessage = await client.messages.create({
             body: whatsAppMessageContent,
-            from: what_mob_number, // Twilio phone number
+            from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER_WHATSAPP}`, // Twilio phone number
             to: `whatsapp:+91${customer.number}` // Customer phone number
         });
         console.log(whatsAppMessage);
