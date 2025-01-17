@@ -1,4 +1,6 @@
+import twilio from 'twilio';
 import Admin from "../models/adminModel.js";
+import User from "../models/userModel.js";
 import EventFlow from "../models/eventFlowModel.js";
 import Tag from "../models/tagModel.js";
 
@@ -674,6 +676,48 @@ export const updateStatusStepFlow = async(req,res) => {
             }
         }
        
+        
+        console.log('SMS start');
+        
+
+        // Fetch customer phone number using expectedUserNumber
+        const customer = await User.findOne({ registrationId: eventFlow.expectedUserNumber });
+        if (!customer) {
+            return res.status(404).json({
+                message: "Associated customer not found",
+                success: false
+            });
+        }
+        const num = `+91${customer.number}`;
+        console.log(num);
+        console.log(`${customer.number}`);
+        const accountSid = 'ACd1d05f36a8399391b13df5f1fe8d1642'; // Twilio Account SID
+        const authToken = '9552a8234edaefec50982587e1efb584';   // Twilio Auth Token
+        const mob_number = '+16812010071';
+        const what_mob_number = '+14155238886';
+        const client = twilio(accountSid, authToken);
+        // Send SMS notification
+        try {
+            const messageContent = `Hello ${customer.name}, your step "${currentStep.flowName}" has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}.`;
+            console.log(messageContent);
+            const message = await client.messages.create({
+                body: messageContent,
+                from: mob_number, // Twilio phone number
+                to: `+91${customer.number}` // Customer phone number
+            });
+            console.log('SMS sent successfully:', message.sid);
+        } catch (smsError) {
+            console.error('Failed to send SMS:', smsError.message);
+            console.error('Full Error Details:', smsError);
+        }
+        const whatsAppMessageContent = `Hello, your junior : ${customer.name}, in this processor "${currentStep.flowName}" and it has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}. Thank You!`;
+        const whatsAppMessage = await client.messages.create({
+            body: whatsAppMessageContent,
+            from: what_mob_number, // Twilio phone number
+            to: `whatsapp:+91${customer.number}` // Customer phone number
+        });
+        console.log(whatsAppMessage);
+
         // Save the updated event flow document with status
         await eventFlow.save();
 
