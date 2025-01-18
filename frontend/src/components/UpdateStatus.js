@@ -33,6 +33,7 @@ const UpdateStatus = ({flowId, eventId}) => {
                     <option value="Not Started">Not Started</option>
                     <option value="In Progress">In Progress</option>
                     <option value="Completed">Completed</option>
+                    <option value="Absent">Absent</option>
                 </select>
                 <button className='update-status' type="submit"> {loading ? 'Update Status...' : 'Update Status'}</button>
 

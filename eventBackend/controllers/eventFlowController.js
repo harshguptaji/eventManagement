@@ -555,11 +555,11 @@ export const updateInfoStepFlow = async(req,res) => {
 
 
 // Update status particular step flow checking the previuos and next stage
+// Update status particular step flow checking the previuos and next stage
 export const updateStatusStepFlow = async(req,res) => {
     try {
         const Id = req.params.id;
         const {flowId, flowStatus, adminName} = req.body;
-
         if(!flowId || !flowStatus){
             return res.status(400).json({
                 message: "Please fill all required fields",
@@ -652,13 +652,17 @@ export const updateStatusStepFlow = async(req,res) => {
                     message: 'Cannot complete current step because the previous step is still in progress.',
                 });
             }
+            if (previousStep.flowStatus === 'Absent') {
+                return res.status(400).json({
+                    message: 'Cannot complete current step because the previous step is Absent',
+                });
+            }
             // If conditions are met, update the current step's status
             if (previousStep.flowStatus === 'Completed') {
                 currentStep.flowStatus = flowStatus;
                 currentStep.lastUpdatedBy = adminInfo.name; // Set the admin updating the status
                 currentStep.lastUpdateTiming = new Date(); // Update timestamp
             }
-            
         }
 
         // Check if the current step was completed, and if so, set the next step to "In Progress"
@@ -675,46 +679,46 @@ export const updateStatusStepFlow = async(req,res) => {
                 eventFlow.flowSteps[i].flowStatus = 'Not Started';
             }
         }
+        // Check if we do Absent, then do all next stages to not started
+        if (flowStatus === 'Absent') {
+            for (let i = flowStepIndex + 1; i < eventFlow.flowSteps.length; i++) {
+                eventFlow.flowSteps[i].flowStatus = 'Absent';
+            }
+        }
        
-        
-        console.log('SMS start');
-        
-
-        // Fetch customer phone number using expectedUserNumber
-        const customer = await User.findOne({ registrationId: eventFlow.expectedUserNumber });
-        if (!customer) {
-            return res.status(404).json({
-                message: "Associated customer not found",
-                success: false
+        if (flowStatus === 'Completed' || flowStatus === 'Absent'){
+         
+            // Fetch customer phone number using expectedUserNumber
+            const customer = await User.findOne({ registrationId: eventFlow.expectedUserNumber });
+            if (!customer) {
+                return res.status(404).json({
+                    message: "Associated customer not found",
+                    success: false
+                });
+            }
+            const accountSid = process.env.TWILIO_ACCOUNT_SID; // Twilio Account SID
+            const authToken = process.env.TWILIO_AUTH_TOKEN;   // Twilio Auth Token
+            const client = twilio(accountSid, authToken);
+            // Send SMS notification
+            try {
+                const messageContent = `Hello ${customer.name}, your step "${currentStep.flowName}" has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}.`;
+                await client.messages.create({
+                    body: messageContent,
+                    from: process.env.TWILIO_PHONE_NUMBER, // Twilio phone number
+                    to: `+91${customer.number}` // Customer phone number
+                });
+            } catch (smsError) {
+                console.error('Failed to send SMS:', smsError.message);
+                console.error('Full Error Details:', smsError);
+            }
+            const whatsAppMessageContent = `Hello, your junior : ${customer.name}, in this processor "${currentStep.flowName}" and it has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}. Thank You!`;
+            await client.messages.create({
+                body: whatsAppMessageContent,
+                from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER_WHATSAPP}`, // Twilio phone number
+                to: `whatsapp:+91${customer.number}` // Customer phone number
             });
         }
-        const num = `+91${customer.number}`;
-        console.log(num);
-        console.log(`${customer.number}`);
-        const accountSid = process.env.TWILIO_ACCOUNT_SID; // Twilio Account SID
-        const authToken = process.env.TWILIO_AUTH_TOKEN;   // Twilio Auth Token
-        const client = twilio(accountSid, authToken);
-        // Send SMS notification
-        try {
-            const messageContent = `Hello ${customer.name}, your step "${currentStep.flowName}" has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}.`;
-            console.log(messageContent);
-            const message = await client.messages.create({
-                body: messageContent,
-                from: process.env.TWILIO_PHONE_NUMBER, // Twilio phone number
-                to: `+91${customer.number}` // Customer phone number
-            });
-            console.log('SMS sent successfully:', message.sid);
-        } catch (smsError) {
-            console.error('Failed to send SMS:', smsError.message);
-            console.error('Full Error Details:', smsError);
-        }
-        const whatsAppMessageContent = `Hello, your junior : ${customer.name}, in this processor "${currentStep.flowName}" and it has been updated to "${flowStatus}" by ${adminName} on ${new Date().toLocaleString()}. Thank You!`;
-        const whatsAppMessage = await client.messages.create({
-            body: whatsAppMessageContent,
-            from: `whatsapp:${process.env.TWILIO_PHONE_NUMBER_WHATSAPP}`, // Twilio phone number
-            to: `whatsapp:+91${customer.number}` // Customer phone number
-        });
-        console.log(whatsAppMessage);
+       
 
         // Save the updated event flow document with status
         await eventFlow.save();

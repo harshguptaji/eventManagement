@@ -19,7 +19,7 @@ const flowStepSchema = new mongoose.Schema({
     },
     flowStatus: {
         type: String,
-        enum: ["Not Started","In Progress","Completed"],
+        enum: ["Not Started","In Progress","Completed","Absent"],
         default: "Not Started"
     },
     lastUpdatedBy: {
